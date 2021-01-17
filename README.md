@@ -7,9 +7,10 @@ pip install selenium
 ```
 
 ### Steps to run the project
-1. Fork the project.
+1. Fork the project
 2. Clone the repo
 3. Run index.py
+4. Get logged in either via instagram or facebook
 
 ***Like it? [Star this repo](https://github.com/Kajaljain22/Instagram-Bot/) :star:***
 
