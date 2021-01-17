@@ -2,7 +2,7 @@ from selenium import webdriver
 from time import sleep
 
 class InstaBot:
-    def __init__(self, username, pw,choice):
+    def __init__(self, username, pw, choice):
         self.driver = webdriver.Chrome()
         self.username = username
         self.choice = choice
@@ -20,10 +20,10 @@ class InstaBot:
             try:
                 self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
                     .click()
-                sleep(5)
+                sleep(2)
                 self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
                     .click()
-                sleep(5)
+                sleep(2)
                 self.get_unfollowers()
             except:
                 print("You entered invalid details..")
@@ -38,10 +38,9 @@ class InstaBot:
                .click()
            sleep(4)
            try:
-              sleep(10)
               self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
                   .click()
-              sleep(5)
+              sleep(2)
               self.get_unfollowers()
            except:
                print("You entered invalid details..")
@@ -53,7 +52,7 @@ class InstaBot:
         else:
             self.driver.find_element_by_class_name("gmFkV")\
                 .click()
-        sleep(5)
+        sleep(2)
         self.driver.find_element_by_xpath("//a[contains(@href,'/following')]")\
             .click()
         following = self._get_names()
